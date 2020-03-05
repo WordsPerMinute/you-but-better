@@ -13,4 +13,12 @@ class UsersController < ApplicationController
   render json: { user: @user }, status: :created
   end
 
+  def index
+    authenticate
+    @users = User.all
+
+    render json: { users: @users }
+
+  end
+
 end

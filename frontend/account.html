@@ -3,29 +3,22 @@
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script type="text/javascript" src="index.js" defer>
+    <link rel="stylesheet" href="account.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="account.js" defer>
     </script>
     <meta charset="utf-8">
     <title>You, but Better</title>
   </head>
   <body>
-  <main>
-    <h1>You, but better</h1>
-
-    <ion-icon id="main-icon" name="trending-up"></ion-icon>
-
-    <h3 id="page-subtitle"><ion-icon name="ear"></ion-icon> Share goals with close friends<br/><ion-icon name="bicycle"></ion-icon> Stay accountable<br><ion-icon name="heart"></ion-icon> Offer support</h3>
-
-    <!-- <div id="content-div"> -->
-      <div class="buttons">
-        <button id="create-button">Sign Up</button>
-        <button id="login-button">Login</button>
-      </div>
+    <nav class="top-bar">
+      <h1>You, but better</h1>
+      <ion-icon id="main-icon" name="trending-up"></ion-icon>
+    </nav>
+    <main>
 
       <div class="create-account-div form">
-        <!-- <h2>Sign Up</h2> -->
         <form class="create-account-form">
           <input type="text" name="name" value="" placeholder="Username">
           <input type="text" name="zip" value="" placeholder="Zip (find friends, we don't sell data)">
@@ -35,15 +28,15 @@
           <input id="create-submit" class="form-button" type="submit" value="Get Started">
         </form>
       </div>
+
       <div class="login-div form">
-        <!-- <h2>Login</h2> -->
         <form class="login-form">
             <input type="text" name="username" value="" placeholder="Username">
             <input type="password" name="password" value="" placeholder="Password">
             <input id="login-submit" class="form-button" type="submit" name="" value="Login">
         </form>
       </div>
-    <!-- </div> -->
-  </main>
+
+    </main>
   </body>
 </html>
