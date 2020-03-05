@@ -1,0 +1,113 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Tomorrow&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Overpass:700&display=swap');
+
+@@font-face {
+    font-family: 'Sansita', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+body {
+  background: rgb(226,238,211);
+ background: linear-gradient(90deg, rgba(226,238,211,0.8323530095632002) 0%, rgba(225,217,225,0.07885160900297616) 100%);
+
+ background-attachment: fixed;
+}
+
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+label {
+  display: none;
+}
+
+ion-icon {
+  color: #865884;
+}
+
+#main-icon {
+  font-size: 64px;
+}
+
+h1, h2 {
+    font-family: 'Overpass', sans-serif;
+
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+#page-subtitle {
+  /* font-size: 2rem; */
+  color: #686868;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 4rem;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.buttons > * {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+form {
+  width: 300px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+}
+
+input, select {
+  width: 100%;
+  height: 20px;
+  display: block;
+  margin-bottom: 0.15rem;
+  padding: 1rem 0.5rem;
+}
+
+.form-button {
+  padding-bottom: 35px;
+}
+
+.create-account-div {
+  display: none;
+}
+
+.login-div {
+  display: none;
+}
+
+.content-div {
+  border: 1px solid #EF9A9A;
+}
