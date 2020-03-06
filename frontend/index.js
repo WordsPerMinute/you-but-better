@@ -54,7 +54,7 @@ loginSubmit.addEventListener('submit', () => {
   .then(response => {
     console.log("Are you my token?", response.token)
     localStorage.setItem("token", response.token)
-  }).then(window.location.replace("http://localhost:3000/account.html"))
+  }).then(window.location.href = "http://localhost:3000/account.html")
 
 
 })

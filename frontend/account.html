@@ -13,30 +13,21 @@
   </head>
   <body>
     <nav class="top-bar">
-      <h1>You, but better</h1>
-      <ion-icon id="main-icon" name="trending-up"></ion-icon>
+      <div class="brand-and-search">
+        <h1> <ion-icon id="main-icon" name="trending-up"></ion-icon> You,<span id="custom-title"></span>, but better</h1>
+      </div>
+      <div class="account-things">
+        <button>My Profile</button>
+        <button>Logout</button>
+      </div>
     </nav>
     <main>
+      <div class="">
 
-      <div class="create-account-div form">
-        <form class="create-account-form">
-          <input type="text" name="name" value="" placeholder="Username">
-          <input type="text" name="zip" value="" placeholder="Zip (find friends, we don't sell data)">
-          <input type="text" name="bio" value="" placeholder="One sentence bio">
-          <input type="email" name="email" value="" placeholder="Email">
-          <input type="password" name="password" value="" placeholder="Password">
-          <input id="create-submit" class="form-button" type="submit" value="Get Started">
-        </form>
       </div>
-
-      <div class="login-div form">
-        <form class="login-form">
-            <input type="text" name="username" value="" placeholder="Username">
-            <input type="password" name="password" value="" placeholder="Password">
-            <input id="login-submit" class="form-button" type="submit" name="" value="Login">
-        </form>
-      </div>
-
     </main>
+    <footer>
+      <p>&copy;</p>
+    </footer>
   </body>
 </html>

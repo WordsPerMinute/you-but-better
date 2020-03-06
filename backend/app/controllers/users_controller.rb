@@ -13,12 +13,21 @@ class UsersController < ApplicationController
   render json: { user: @user }, status: :created
   end
 
-  def index
+  # def index
+  #   authenticate
+  #   @users = User.all
+  #   render json: { users: @users }
+  # end
+
+  def add_a_friend
     authenticate
-    @users = User.all
+    @user
+  end
 
-    render json: { users: @users }
-
+  def show
+    authenticate
+    @user
+    render json: { id: @user.id, bio: @user.bio, email: @user.email, photo: @user.photo, username: @user.username, zip: @user.zip }
   end
 
 end
