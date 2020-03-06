@@ -3,11 +3,14 @@
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="account.css">
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="account.js" defer></script>
-    <script src="https://use.fontawesome.com/1ba690775a.js"></script>
+
+    <!-- <script src="https://use.fontawesome.com/1ba690775a.js"></script> -->
     <meta charset="utf-8">
     <title>You, but Better</title>
   </head>
@@ -15,20 +18,29 @@
     <div class="nav-container">
       <nav class="nav-content">
         <div class="brand-and-search">
-          <h1> <ion-icon id="main-icon" name="trending-up"></ion-icon> You,<span id="custom-title"></span>, but better</h1>
+          <h1> <ion-icon id="main-icon" name="trending-up"></ion-icon> You,<img class="user-photo"><span id="custom-title"></span>, but better</h1>
         </div>
         <div class="account-things">
           <button><div class="helper">
             <ion-icon name="person-outline"></ion-icon>
           </div><span>My Profile</span></button>
-          <button><ion-icon name="log-out-outline"></ion-icon>Logout</button>
+          <button class="logout"><ion-icon name="log-out-outline"></ion-icon>Logout</button>
         </div>
       </nav>
     </div>
 
     <div class="main-container">
-    <main>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <main>
+        <div class="user-column">
+            <p>My goals</p>
+          <div class="user-goals">
+          </div>
+        </div>
+      <div class="friend-column">
+        <p>Goals from my Love Bubble</p>
+        <div class="friends-list">
+        </div>
+      </div>
     </main>
   </div>
   <div class="footer-container">

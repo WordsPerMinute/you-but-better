@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   post "login", to: "authentication#login"
   resources :users, only: [:create]
   get 'users', to: "users#show"
+  get 'friend_goals', to: "users#friend_goals"
 end
