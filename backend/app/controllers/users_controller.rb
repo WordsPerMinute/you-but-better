@@ -13,11 +13,11 @@ class UsersController < ApplicationController
   render json: { user: @user }, status: :created
   end
 
-  # def index
-  #   authenticate
-  #   @users = User.all
-  #   render json: { users: @users }
-  # end
+  def friend_goals
+    authenticate
+    @users = User.all
+    render json: @users, include: :goals
+  end
 
   def add_a_friend
     authenticate
@@ -26,8 +26,7 @@ class UsersController < ApplicationController
 
   def show
     authenticate
-    @user
-    render json: { id: @user.id, bio: @user.bio, email: @user.email, photo: @user.photo, username: @user.username, zip: @user.zip }
+    render json: { id: @user.id, bio: @user.bio, email: @user.email, photo: @user.photo, username: @user.username, photo: @user.photo, goals: @user.goals }
   end
 
 end

@@ -1,3 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Tomorrow&display=swap');
@@ -15,48 +74,6 @@
     font-family: 'Overpass', sans-serif;
 }
 
-/* nav bar */
-.top-bar {
-  display :flex;
-  justify-content: space-between;
-}
-
-.account-things button:hover {
-  color: grey;
-}
-
-
-body {
-  background: rgb(226,238,211);
- background: linear-gradient(90deg, rgba(226,238,211,0.8323530095632002) 0%, rgba(225,217,225,0.07885160900297616) 100%);
-
- background-attachment: fixed;
-}
-
-
-main {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
-
-label {
-  display: none;
-}
-
-ion-icon {
-  /* color: #865884; */
-}
-
-#main-icon {
-  font-size: 16px;
-}
-
 h1, h2 {
     font-family: 'Overpass', sans-serif;
 
@@ -68,14 +85,250 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 
+p {
+  /* box-sizing: border-box; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.user-photo {
+  width: 16px;
+  height: auto;
+}
+
+body {
+  background: rgb(226,238,211);
+ background: linear-gradient(90deg, rgba(226,238,211,0.8323530095632002) 0%, rgba(225,217,225,0.07885160900297616) 100%);
+ background-attachment: fixed;
+
+ label {
+   display: none;
+ }
+
+ #main-icon {
+   font-size: 16px;
+ }
+
+ .brand-and-search {
+   font-size: 32px;
+ }
+
+ h2 {
+   font-size: 2rem;
+   text-align: center;
+ }
+}
+
+/* NAV BAR */
+.nav-container {
+  /* grid-area: nav; */
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid;
+  border-color: hsla(0, 0%, 50%, 0.5);
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+}
+
+.nav-content, main, footer {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: center;
+}
+
+/* .account-things button:hover { */
+
+button:hover {
+  color: grey;
+}
+
+.helper {
+    display: inline-block;
+    /* height: 100%; */
+    /* vertical-align: middle; */
+}
+
+.account-things button ion-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+button .material-icons {
+  font-size: 12px;
+}
+
+button {
+  border: 0px;
+  transition: all 0.3s;
+  background: hsla(0, 0%, 0%, 0);
+  margin-right: 5px;
+}
+
+.friend-card button {
+  padding-bottom: 10px;
+}
+
+
+
+/* MAIN */
+/* align-items: center; */
+
+.main-container {
+  /* grid-area: main; */
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  /* flex-flow: column nowrap; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* CARDS */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #7D4C7B;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.user-goals div {
+  width: 300px;
+}
+
+.user-column {
+  align-self: flex-start;
+}
+
+.friend-column {
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.card-header {
+  color: #7D4C7B;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #7D4C7B;
+  background-color: #F4F1F3;
+  padding: 5px 0;
+}
+
+.card-main {
+  display: flex;              /* Children use Flexbox */
+  flex-direction: column;     /* Rotate Axis to Vertical */
+  justify-content: center;    /* Group Children in Center */
+  align-items: center;        /* Group Children in Center (+axis) */
+  padding: 15px 0;            /* Add padding to the top/bottom */
+}
+
+
+.material-icons {
+  font-size: 50px;
+  color: #7D4C7B;
+  margin-bottom: 5px;
+}
+
+
+
+.main-description {
+  color: #6D356B;
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.main-description p {
+
+  width: 280px;
+}
+
+.main-description h4 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  /* text-align: center; */
+  font-weight: 900;
+}
+
+/* friend cards */
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #7D4C7B;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding-top: 10px;
+}
+
+.friend-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.friend-photo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  border:2px solid #fff;
+  -moz-box-shadow: 10px 10px 5px #EEDDEE;
+  -webkit-box-shadow: 5px 5px 5px #EEDDEE;
+  /* box-shadow: 10px 10px 5px #ccc; */
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  /* border-radius:25px; */
+  /* filter: drop-shadow(5px 5px 0.75rem #6D356B); */
+}
+
+.friend-username {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+
+.friend-bio {
+  color: #686868;
+  font-weight: 900;
+}
+
+.friend-bio-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* FOOTER */
+
+.footer-container {
+  /* grid-area: footer; */
+  display: flex;
+  justify-content: center;
 }
 
 footer {
+  min-height: 50vh;
   font-size: .5rem;
+  display: flex;
+  justify-content: center;
 }
+
+
 
 #custom-title {
   font-size: .75rem;
@@ -96,15 +349,7 @@ h3 {
   margin-bottom: 3rem;
 }
 
-button {
-  border: 0px;
-  transition: all 0.3s;
-  background: hsla(0, 0%, 0%, 0);
-}
 
-button:hover {
-
-}
 
 form {
   width: 300px;
@@ -118,20 +363,4 @@ input, select {
   display: block;
   margin-bottom: 0.15rem;
   padding: 1rem 0.5rem;
-}
-
-.form-button {
-  padding-bottom: 35px;
-}
-
-.create-account-div {
-  display: none;
-}
-
-.login-div {
-  display: none;
-}
-
-.content-div {
-  border: 1px solid #EF9A9A;
 }

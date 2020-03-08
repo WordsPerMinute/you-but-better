@@ -4,6 +4,8 @@ const loginDiv = document.querySelector('.login-div')
 const createButton = document.querySelector('#create-button')
 const createDiv = document.querySelector('.create-account-div')
 
+const token = localStorage.getItem("token")
+console.log(token)
 
 loginButton.addEventListener('click', () => {
   toggleShow(loginDiv)
@@ -54,7 +56,9 @@ loginSubmit.addEventListener('submit', () => {
   .then(response => {
     console.log("Are you my token?", response.token)
     localStorage.setItem("token", response.token)
-  }).then(window.location.href = "http://localhost:3000/account.html")
+    console.log(localStorage.getItem("token", response.token))
+    window.location.href = "http://localhost:3000/account.html"
+  })
 
 
 })
