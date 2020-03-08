@@ -21,7 +21,7 @@ This project was required to be...
 
 ## How to test the project
 1. This is a Ruby app, so you need to make sure you have Ruby installed on your system.
-2. The Ruby version used in development was `ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]
+2. The Ruby version used in development was `ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]`
 3. Clone this repository to your machine, bundle install, and run the rails server on port 4000 (rails s -p4000) and open the index.html file in the frontend folder
 
 ## Contibutor's Guide
