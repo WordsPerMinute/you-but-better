@@ -84,6 +84,11 @@ h1 {
   margin-bottom: 0px;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 p {
   /* box-sizing: border-box; */
   font-family: 'Open Sans', sans-serif;
@@ -136,7 +141,9 @@ body {
   align-items: center;
 }
 
-.account-things button:hover {
+/* .account-things button:hover { */
+
+button:hover {
   color: grey;
 }
 
@@ -146,18 +153,24 @@ body {
     /* vertical-align: middle; */
 }
 
-button ion-icon {
-      vertical-align: middle;
+.account-things button ion-icon {
+  vertical-align: middle;
   margin-right: 5px;
+}
 
+button .material-icons {
+  font-size: 12px;
 }
 
 button {
   border: 0px;
   transition: all 0.3s;
   background: hsla(0, 0%, 0%, 0);
-  margin-left: 5px;
-  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.friend-card button {
+  padding-bottom: 10px;
 }
 
 
@@ -205,7 +218,7 @@ main {
 .card-header {
   color: #7D4C7B;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   border-bottom: 1px solid #7D4C7B;
   background-color: #F4F1F3;
@@ -227,9 +240,11 @@ main {
   margin-bottom: 5px;
 }
 
+
+
 .main-description {
   color: #6D356B;
-  font-size: 12px;
+  font-size: 13px;
   padding-left: 20px;
 }
 
@@ -267,22 +282,35 @@ main {
 }
 
 .friend-photo {
-  width: 250px;
+  width: 300px;
   height: auto;
   margin-bottom: 10px;
-  filter: drop-shadow(5px 5px 0.75rem #6D356B);
+  border:2px solid #fff;
+  -moz-box-shadow: 10px 10px 5px #EEDDEE;
+  -webkit-box-shadow: 5px 5px 5px #EEDDEE;
+  /* box-shadow: 10px 10px 5px #ccc; */
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  /* border-radius:25px; */
+  /* filter: drop-shadow(5px 5px 0.75rem #6D356B); */
 }
 
 .friend-username {
   font-size: 2rem;
   font-weight: 900;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .friend-bio {
   color: #686868;
   font-weight: 900;
 }
+
+.friend-bio-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 /* FOOTER */

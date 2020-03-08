@@ -4,6 +4,13 @@ const token = localStorage.getItem("token")
 console.log(token)
 if (!token) {
   window.location.href = "http://localhost:3000/"
+  console.log("no token")
+}
+
+if (token == null) {
+  window.location.href = "http://localhost:3000/"
+  console.log("null token")
+
 }
 
 //logout button
@@ -12,6 +19,7 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("token")
   window.location.href = "http://localhost:3000/"
 })
+
 
 
 // wrap whole page in auth check so I have the user's account info to display with etc
@@ -28,12 +36,15 @@ fetch(`http://localhost:4000/users/`, {
     const userPhoto = document.querySelector('.user-photo')
     userPhoto.src = `${user.photo}`
     mainTitle.innerText = ` ${user.username}`
-
-
+    try {
     user.goals.forEach(goal => {
       let goalsDiv = document.querySelector('.user-goals')
       createGoalsCards(goal, goalsDiv)
     })
+  }
+  catch(error) {
+      window.location.href = "http://localhost:3000/"
+      }
     createFriendCards(user)
 
 
@@ -57,7 +68,8 @@ function createFriendCards(user) {
           aFriendDiv.innerHTML = `
           <img class="friend-photo" src="${friend.photo}"/>
           <p class="friend-username">${friend.username}</p>
-          <p class="friend-bio">${friend.bio}</p>
+          <button type="button"><ion-icon name="mail-outline"></ion-icon></button>
+          <div class="friend-bio-div"><p class="friend-bio">${friend.bio}</p></div>
           `
           friend.goals.forEach(goal => {
             createGoalsCards(goal, aFriendDiv)
@@ -67,9 +79,6 @@ function createFriendCards(user) {
       })
     })
 }
-
-// <button class="match-btt" type="button">Message</button>
-// <button class="match-btt2" type="button" onclick="window.location.href = 'mailto:${learner.email}';">Email</button>
 
 
 function createGoalsCards(goal, divToAppend){
@@ -87,6 +96,8 @@ function createGoalsCards(goal, divToAppend){
       <p>${goal.why}</p>
       <h4>Current Action</h4>
       <p>${goal.current_action}</p>
+      <h4>Months to complete</h4>
+      <p>${goal.months}</p>
       </div>
     </div>
   `
