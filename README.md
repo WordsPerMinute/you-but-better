@@ -30,3 +30,8 @@ At this time, some additional base functionality needs to be added before it mak
 ## Videos
 1. Overview (Login, see example user data)
 ![](overview.gif)
+
+## Preview Image
+![](image_.png)
+
+<meta property='og:image' content='//media.example.com/ 1234567.jpg"/>
