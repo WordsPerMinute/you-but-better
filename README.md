@@ -34,4 +34,7 @@ At this time, some additional base functionality needs to be added before it mak
 1. Overview (Login, see example user data)
 ![](overview.gif)
 
+<head>
 <meta property='og:image' content='//media.example.com/ 1234567.jpg"/>
+</head>
+                                
