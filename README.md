@@ -1,3 +1,7 @@
+<head>
+<meta name="image" property="og:image" content="https://github.com/WordsPerMinute/you-but-better/raw/master/image.png">
+<meta property='og:image' content='https://github.com/WordsPerMinute/you-but-better/raw/master/image.png"/>
+</head>
 # you-but-better
 ## Overview
 'You, but Butter' is an app to help people keep track of goals using a SMART goal inspired framework.
@@ -34,8 +38,5 @@ At this time, some additional base functionality needs to be added before it mak
 1. Overview (Login, see example user data)
 ![](overview.gif)
 
-<head>
-<meta name="image" property="og:image" content="https://github.com/WordsPerMinute/you-but-better/raw/master/image.png">
-<meta property='og:image' content='https://github.com/WordsPerMinute/you-but-better/raw/master/image.png"/>
-</head>
+
                                 
