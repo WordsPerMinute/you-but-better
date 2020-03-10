@@ -27,11 +27,11 @@ This project was required to be...
 ## Contibutor's Guide
 At this time, some additional base functionality needs to be added before it makes sense to ask for contributor help.
 
+## Preview Image
+![](image.png)
+
 ## Videos
 1. Overview (Login, see example user data)
 ![](overview.gif)
-
-## Preview Image
-![](image_.png)
 
 <meta property='og:image' content='//media.example.com/ 1234567.jpg"/>
