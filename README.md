@@ -35,6 +35,7 @@ At this time, some additional base functionality needs to be added before it mak
 ![](overview.gif)
 
 <head>
+<meta name="image" property="og:image" content="https://github.com/WordsPerMinute/you-but-better/raw/master/image.png">
 <meta property='og:image' content='https://github.com/WordsPerMinute/you-but-better/raw/master/image.png"/>
 </head>
                                 
