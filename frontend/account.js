@@ -1,15 +1,12 @@
 // make sure a token exists
 
 const token = localStorage.getItem("token")
-console.log(token)
 if (!token) {
   window.location.href = "http://localhost:3000/"
-  console.log("no token")
 }
 
 if (token == null) {
   window.location.href = "http://localhost:3000/"
-  console.log("null token")
 
 }
 
@@ -30,7 +27,6 @@ fetch(`http://localhost:4000/users/`, {
   }
 }).then(response => response.json())
   .then(user => {
-    // console.log(user)
     // let's play with the DOM and customize this to the user
     const mainTitle = document.querySelector('#custom-title')
     const userPhoto = document.querySelector('.user-photo')
@@ -59,7 +55,6 @@ function createFriendCards(user) {
   }).then(response => response.json())
     .then(users => {
       let goalsDiv = document.querySelector('.friends-list')
-      console.log(users)
 
       users.forEach(friend => {
         if (friend.id != user.id){
@@ -82,7 +77,6 @@ function createFriendCards(user) {
 
 
 function createGoalsCards(goal, divToAppend){
-  console.log(goal)
   let cardDiv = document.createElement('div')
   cardDiv.classList.add('card')
   cardDiv.innerHTML = `

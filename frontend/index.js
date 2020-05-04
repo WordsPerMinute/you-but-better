@@ -5,7 +5,6 @@ const createButton = document.querySelector('#create-button')
 const createDiv = document.querySelector('.create-account-div')
 
 const token = localStorage.getItem("token")
-console.log(token)
 
 loginButton.addEventListener('click', () => {
   toggleShow(loginDiv)
@@ -34,11 +33,9 @@ function toggleShow(elementToToggle) {
 
 const loginSubmit = document.querySelector('.login-form')
 const createSubmit = document.querySelector('#create-submit')
-console.log("k", loginSubmit)
 
 loginSubmit.addEventListener('submit', () => {
   event.preventDefault()
-  console.log(event.target)
 
   const formData = new FormData(event.target)
   const user = {
@@ -54,9 +51,7 @@ loginSubmit.addEventListener('submit', () => {
     body: JSON.stringify(user)
   }).then(response => response.json())
   .then(response => {
-    console.log("Are you my token?", response.token)
     localStorage.setItem("token", response.token)
-    console.log(localStorage.getItem("token", response.token))
     window.location.href = "http://localhost:3000/account.html"
   })
 
