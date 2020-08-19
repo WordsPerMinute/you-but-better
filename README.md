@@ -24,7 +24,7 @@ This project was required to be...
 2. The Ruby version used in development was `ruby 2.6.5p114 (2019-10-01 revision 67812) [x86_64-linux]`
 3. Clone this repository to your machine, bundle install, and run the rails server on port 4000 (rails s -p4000) and open the index.html file in the frontend folder
 
-## Contibutor's Guide
+## Contributor's Guide
 At this time, some additional base functionality needs to be added before it makes sense to ask for contributor help.
 
 ## Preview Image
