@@ -1,5 +1,5 @@
 # you-but-better
-'You, but Butter' is an app to help people keep track of goals using a SMART goal inspired framework.
+'You, but Better' is an app to help people keep track of goals using a SMART goal inspired framework.
 
 ![](overview.gif)
 
