@@ -1,6 +1,7 @@
 # you-but-better
-## Overview
 'You, but Butter' is an app to help people keep track of goals using a SMART goal inspired framework.
+
+![](overview.gif)
 
 The app uses a Postgres db, with Rails.
 The front-end content is rendered with vanilla Javascript.
@@ -29,7 +30,3 @@ At this time, some additional base functionality needs to be added before it mak
 
 ## Preview Image
 ![](image.png)
-
-## Videos
-1. Overview (Login, see example user data)
-![](overview.gif)
